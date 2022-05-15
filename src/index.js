@@ -7,13 +7,15 @@ import Popper from "popper.js";
 import "./index.css";
 import App from "./App";
 import { makeServer } from "./server";
-
+import BrowerRoute from "react-router-dom";
 // Call make Server
 makeServer();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowerRoute>
+      <App />
+    </BrowerRoute>
   </React.StrictMode>,
   document.getElementById("root")
 );
